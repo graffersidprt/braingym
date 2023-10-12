@@ -1,0 +1,111 @@
+
+/* 
+Created on: 17 Sep, 2014, 4:29:37 PM
+Author: senthil
+*/
+
+.ti_tx,
+.mi_tx,
+.mer_tx {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0 3px;
+    display: block;
+}
+.time-picker:focus{
+    border-color: #149DFF;
+}
+.time_pick{
+    width: 100%;
+}
+.time_pick .time, .time_pick .mins, .time_pick .meridian {
+	width: 40px;
+	float: left;
+	margin: 0 6px;
+	font-size: 20px;
+	color: #2d2e2e;
+	font-weight: 700;
+}
+
+
+.time_pick .prev, .time_pick .next {
+    cursor: pointer;
+    height: 10px;
+    width: 40px;
+    border: 0px solid #E0E2E9;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/*.prev:hover,
+.next:hover {
+	background-color: #f6f8f9;
+}*/
+
+.time_pick .next {
+    background: url("../images/icon-angle-down.svg") no-repeat center center;
+}
+
+.time_pick .prev {
+	background-position: center;
+    background: url("../images/icon-angle-up.svg") no-repeat center center;
+}
+
+.time_pick {
+	position: relative;
+}
+
+.timepicker_wrap {
+	display: none;
+    position: absolute;
+    top: 0 !important;
+    left: 0 !important;
+    border-radius: 8px;
+    height: 64px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+        padding-right: 18px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ced4da;
+    background: #fff;
+    overflow: hidden;
+    z-index: 99;
+        justify-content: center;
+}
+
+.time_pick .arrow_top {
+    display: none;
+	position: absolute;
+	top: -10px;
+	left: 20px;
+	background: url(../images/icon-a) no-repeat;
+	width: 18px;
+	height: 10px;
+	z-index: 999;
+}
+input.timepicki-input {
+	    /* background: none repeat scroll 0 0 #f6f8f9; */
+    border: 0px solid #E0E2E9;
+    border-radius: 4px;
+    float: none;
+    margin: 0;
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    font-size: 16px;
+}
+input.timepicki-input:focus, input.timepicki-input:focus-visible {
+	box-shadow: none;
+	border-color: #CCCFD7;
+	outline: 0;
+}
+.time_pick a.reset_time {
+	float: left;
+	margin-top: 5px;
+	color: #000;
+}
